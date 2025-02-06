@@ -3,34 +3,30 @@
   <head>
     <title>+ Quote</title>
     <meta charset="utf-8" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
   </head>
   <body>
-    <div class="container mt-3" style="width: 450px">
+    <!-- use flexbox to style the page -->
+    <div
+      style="
+        width: 450px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      "
+    >
       <h2 class="text-center">+ Quote</h2>
-      <footer id="author" class="blockquote test-center">
-        // get new quote ??
-      <button id="new-quote" class="">
-        <thead>
-          <tr>
-            <th>Date</th>
-            <th>Country</th>
-            <th>Confirmed</th>
-            <th>Deaths</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td id="date"></td>
-            <td id="areaName"></td>
-            <td id="latestBy"></td>
-            <td id="deathNew"></td>
-          </tr>
-        </tbody>
-      </table>
+      <p id="quote">quote</p>
+      <p id="author">author</p>
+      <img
+        id="image"
+        src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExcGVsdGk4bHJ3dXBoMW4yOHFiczNjYWZyZXJwZDYwamZzcXlhamxoZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/cBncDNrdxga2I/giphy.gif"
+        alt="image"
+      />
+
+      <!-- get new quote ?? -->
+      <button id="new-quote">New Quote</button>
     </div>
   </body>
   <script src="script.js"></script>
