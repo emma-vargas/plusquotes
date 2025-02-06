@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
     const targetUrl = 'http://zenquotes.io/api/quotes';
     try {
-      const response = await fetch(proxyUrl + targetUrl);
+      const response = await fetch(targetUrl);
       const quotes = await response.json();
 
       //randomly select a quoteObject inside the quotes
@@ -38,6 +38,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         'https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExa2lhMzQ0NnU1OGJyMnVwY21ta2M2Y2FxaXRzcndiaXV6MTBrYWpiOSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8vQSQ3cNXuDGo/giphy.gif',
         'https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZTFlbWFnZDQwaW13cmQ4cWZoaXBkYzBzM3FiOTd1YmQyaXhodTFrNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/DOlsI4bO3N9zW/giphy.gif',
         'https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcHlxOXdjcXVqY21xMndieGg3NDhib2w5Y2VueG8zeWkzNmNkaDh5ciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Y42OeCcJI4ufXDQ3oA/giphy.gif',
+        'https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExYXdjMXd3NjF2dXhpeXVwZDE0OGIwdXlhaGd1NDE0dW9nYzE3dDIybCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/EyFVA1LxFZAru/giphy.gif',
       ];
 
       // randomly select an image from the array
@@ -57,7 +58,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
   }
   // adding a click event listener to the button
-  document.addEventListener('click', async () => {
+  button.addEventListener('click', async () => {
     // call getQuote function when button is clicked
     await getQuote();
   });

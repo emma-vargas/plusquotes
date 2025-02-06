@@ -1,11 +1,16 @@
 {
-  "name": "Covid-19 Stats UK",
-  "version": "1.0.0",
-  "description": "latest covid data of UK",
   "manifest_version": 3,
-  "author": "Sampurna Chapagain",
+  "name": "+ Quotes",
+  "version": "1.0",
+  "description": "Displays a random quote and author from the ZenQuotes API.",
   "action": {
-    "default_popup": "index.html",
-    "default_title": "Latest Covid Report"
+    "default_popup": "index.html"
+  },
+  "permissions": [],
+  "host_permissions": ["http://zenquotes.io/*", "https://zenquotes.io/*"],
+  "icons": {
+    "16": "#48A6A7",
+    "48": "",
+    "128": ""
   }
 }

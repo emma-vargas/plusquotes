@@ -1,2 +1,2 @@
-# plusquotes
-collaboration Arthur &amp; Emma
+Title: + Quotes
+collaboration: Arthur & Emma
